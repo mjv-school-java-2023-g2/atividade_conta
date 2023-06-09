@@ -7,13 +7,11 @@ class Conta{
 
 //Métodos da classe ser conta
         public void sacarValor(){
-
         }
         
         public void transferirValor(){
         }
 
-        public void cancelarConta(){
-                
+        public void cancelarConta(){     
         }
 }
