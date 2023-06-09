@@ -5,6 +5,8 @@ class Conta{
         public Long numeroAgencia;
         String nomeCliente;
 
+        String dataNascimento
+
 //Métodos da classe ser conta
         public void sacarValor(){
         }
@@ -13,5 +15,9 @@ class Conta{
         }
 
         public void cancelarConta(){     
+        }
+
+        public void consultarExtrato() {
+                
         }
 }
