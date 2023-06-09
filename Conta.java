@@ -5,7 +5,8 @@ class Conta{
         public Long numeroAgencia;
         String nomeCliente;
 
-        String dataNascimento
+        String dataNascimento;
+        Double saldoConta;
 
 //Métodos da classe ser conta
         public void sacarValor(){
@@ -20,4 +21,10 @@ class Conta{
         public void consultarExtrato() {
                 
         }
+
+        public Double consultarSaldo(){
+                return saldoConta;
+        }
+
+
 }
