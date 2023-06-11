@@ -1,6 +1,6 @@
 class Conta{
-	
-//Atributos da classe conta
+
+        //Atributos da classe conta
         String numeroConta;
         public Long numeroAgencia;
         String nomeCliente;
@@ -8,21 +8,30 @@ class Conta{
         String dataNascimento;
         Double saldoConta;
 
-//Métodos da classe ser conta
-        public void sacarValor(){
-        }
-        
-        public void transferirValor(){
+        //Métodos da classe ser conta
+        public Conta abrirConta(
+                String numeroConta,
+                long numeroAgencia,
+                String nomeCliente,
+                String dataNascimento
+        ) {
+
         }
 
-        public void cancelarConta(){     
+        public void sacarValor() {
+        }
+
+        public void transferirValor() {
+        }
+
+        public void cancelarConta() {     
         }
 
         public void consultarExtrato() {
-                
+
         }
 
-        public Double consultarSaldo(){
+        public Double consultarSaldo() {
                 return saldoConta;
         }
 
