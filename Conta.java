@@ -2,48 +2,76 @@ class Conta {
 
         // Atributos da classe conta
         String numeroConta;
-        public Long numeroAgencia;
+        long numeroAgencia;
         String nomeCliente;
-
         String dataNascimento;
-        Double saldoConta;
+        double saldoConta = 0.0;
 
-        // Métodos da classe conta
-        public Conta abrirConta(
+        public Conta(
                 String numeroConta,
                 long numeroAgencia,
                 String nomeCliente,
                 String dataNascimento
         ) {
-
+                this.numeroConta = numeroConta;
+                this.numeroAgencia = numeroAgencia;
+                this.nomeCliente = nomeCliente;
+                this.dataNascimento = dataNascimento;
         }
 
-        public void sacarValor(Double valorSaque) {
+        public  String mostrarNumeroConta(){
+                return numeroConta;
         }
 
-        public void transferirValor(Conta contaDestino, Double valorTranferir) {
-
+        public long mostrarNumeroAgencia(){
+                return numeroAgencia;
         }
 
-        public void sacarValor() {
+        public String alterarNumeroAgencia(long novoNumeroAgencia){
+                return "Mensagem";
         }
 
-        public void transferirValor() {
+        public String mostrarNomeCliente(){
+                return nomeCliente;
         }
 
-        public void cancelarConta() {     
+        public String alterarNomeCliente(String novoNomeCliente){
+                return "Mensagem";
         }
 
-        public void consultarExtrato() {
+        public String mostrarDataNascimento(){
+                return dataNascimento;
+        }
 
+        public String alterarDataNascimento(String novaDataNascimento){
+                return "Mensagem";
+        }
+
+        public String sacarValor(double valorSaque) {
+                return "Mensagem";
+        }
+
+        public String transferirValor(Conta contaDestino, Double valorTranferir) {
+                return "Mensagem";
+        }
+
+        public String sacarValor(Double valorSacar) {
+                return "Mensagem";
+        }
+
+        public String cancelarConta(String senha) {
+                return "Mensagem";  
+        }
+
+        public String consultarExtrato() {
+                return "Extrato";
         }
 
         public Double consultarSaldo() {
                 return saldoConta;
         }
-
         // simula qual seria o montante final se o valor de saldoConta fosse investido por determinado numero de meses, a uma taxa específica
-        public Double simularRendimento(Double jurosMes, Integer meses) {
-                return saldoConta;
+        public String simularRendimento(double jurosMes, int meses) {
+                return "Mensagem - Valor do montante final da simulação";
         }
 }
