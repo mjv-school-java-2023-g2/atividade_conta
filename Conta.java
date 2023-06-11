@@ -1,6 +1,6 @@
-class Conta{
+class Conta {
 
-        //Atributos da classe conta
+        // Atributos da classe conta
         String numeroConta;
         public Long numeroAgencia;
         String nomeCliente;
@@ -8,13 +8,20 @@ class Conta{
         String dataNascimento;
         Double saldoConta;
 
-        //Métodos da classe ser conta
+        // Métodos da classe conta
         public Conta abrirConta(
                 String numeroConta,
                 long numeroAgencia,
                 String nomeCliente,
                 String dataNascimento
         ) {
+
+        }
+
+        public void sacarValor(Double valorSaque) {
+        }
+
+        public void transferirValor(Conta contaDestino, Double valorTranferir) {
 
         }
 
@@ -35,5 +42,8 @@ class Conta{
                 return saldoConta;
         }
 
-
+        // simula qual seria o montante final se o valor de saldoConta fosse investido por determinado numero de meses, a uma taxa específica
+        public Double simularRendimento(Double jurosMes, Integer meses) {
+                return saldoConta;
+        }
 }
